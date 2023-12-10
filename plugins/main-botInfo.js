@@ -42,29 +42,23 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let speed = neww - old
   let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Guru.jpg')
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Gurulogo.jpg')
 let user = global.db.data.users[who]
   
 let infobt = `
 ≡ *INFO BOT*
   
 *STATE*
-▢ *${groupsIn.length}* GROUP CHATS
+▢ *${groupsIn.length}* DevuttyV1 CHATS
 ▢ *${groupsIn.length}* united groups
 ▢ *${groupsIn.length - groupsIn.length}* abandoned groups
 ▢ *${chats.length - groupsIn.length}* private chats
 ▢ *${chats.length}* Total Chats
 
 *≡ OWNER*
-  *GURU*
-▢ Instagram :
-  • https://instagram.com/asli_guru69
+  *DevuttyV1*
 ▢ GitHub :
-  • https://github.com/Guru322
-▢ Telegram : 
-  • t.me/i_want_to_be_isekaied (GURU) 
-▢ YouTube : 
-  • https://youtube.com/@Asliguru
+  •https://github.com/TheBlackLion17
 
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
@@ -73,7 +67,7 @@ let infobt = `
 *≡  NodeJS memory *
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `
-conn.sendFile(m.chat, pp, 'prefil.jpg', infobt, m, false, { mentions: [who] })
+conn.sendFile(m.chat, pp, 'Gurulogo.jpg', infobt, m, false, { mentions: [who] })
 m.react(done)
 
 }
