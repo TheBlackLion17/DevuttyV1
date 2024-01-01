@@ -91,7 +91,7 @@ GURU-BOT- Simple Multi Device whatsapp bot.
 
 2. Now Deploy
     <br>
-<p align="center"><a href="https://replit.com/@TheBlackLion17/DevuttyV1> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://replit.com/@TheBlackLion17/DevuttyV1"> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
 
  
  
