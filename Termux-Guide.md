@@ -12,8 +12,8 @@
 
  Run the following commands to clone the repo (Use your fork)
  ```SH
-> git clone https://github.com/Guru322/GURU-BOT
-> cd GURU-BOT
+> git clone https://github.com/TheBlackLion17/DevuttyV1
+> cd DevuttyV1
  ```
 
  Run this following command to install the dependencies 
